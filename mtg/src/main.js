@@ -6,6 +6,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.prototype.$url1 = 'http://localhost:3000/movies/'
+Vue.prototype.$url2 = 'http://localhost:3000/categories/'
+Vue.prototype.$urlSettings = {
+  method: 'GET',
+  headers: {
+    Accept: 'application/json'
+  }
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

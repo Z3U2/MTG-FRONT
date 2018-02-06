@@ -2,8 +2,8 @@
   <v-container>
   <v-layout>
   <v-flex >
-    <v-card>
-      <v-card-media src="https://i.pinimg.com/736x/61/1c/60/611c608f777a4891cada23ef36572b6b--batman-vs-superman--batman-vs-superman-trailer.jpg" height="500px" >
+    <v-card hover>
+      <v-card-media :src="movie.image" height="500px" >
 
       </v-card-media>
       <v-card-title primary-title>
@@ -15,12 +15,13 @@
           right
           color="blue"
           class="indigo--text"
+          :to="'/movie/'+movie.id"
         >
           <v-icon>play_arrow</v-icon>
         </v-btn>
-        <div>
-          <h3 class="headline mb-0">{{title}}</h3>
-          <div>{{synopsis}}</div>
+        <div style="margin: auto">
+          <h3 class="headline mb-0">{{movie.name}}</h3>
+          <p>{{movie.synopsis}}</p>
         </div>
       </v-card-title>
 
@@ -34,18 +35,19 @@
 <script>
 export default {
   name: 'Movie',
+  props: [
+    'movie'
+  ],
   data () {
-    return {
-      title: 'Batman vs Superman',
-      synopsis: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .'
-    }
+    return {}
+  },
+  created () {
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 
 img {
   width: 100%
