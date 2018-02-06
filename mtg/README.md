@@ -1,6 +1,8 @@
-# mtg
+# Movie Trailer Gallery
 
 > A Vue.js project
+
+Simple movie trailer gallery where you can add new movies with categories and synopsis, or search and browse the existing ones
 
 ## Build Setup
 
@@ -27,4 +29,10 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Notes : 
+
+- You need to run the back-end too (https://github.com/Z3U2/MTG-back).
+
+- No tests for the moment
+
+- Still doesn't have the option to edit entries from the website 
