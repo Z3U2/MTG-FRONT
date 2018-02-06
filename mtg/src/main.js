@@ -6,6 +6,7 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// Instance properties used for http requests
 Vue.prototype.$url1 = 'http://localhost:3000/movies/'
 Vue.prototype.$url2 = 'http://localhost:3000/categories/'
 Vue.prototype.$urlSettings = {

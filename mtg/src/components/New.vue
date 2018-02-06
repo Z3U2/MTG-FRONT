@@ -65,7 +65,7 @@ export default {
       link: '',
       linkRules: [
         (v) => !!v || 'Link is required',
-        (v) => /(?:https?:\/\/)?(?:(?:(?:www\.?)?youtube\.com(?:\/(?:(?:watch\?.*?(v=[^&\s]+).*)|(?:v(\/.*))|(channel\/.+)|(?:user\/(.+))|(?:results\?(search_query=.+))))?)|(?:youtu\.be(\/.*)?))/.test(v) || 'Not a valid YouTube link'
+        (v) => /https:\/\/www.youtube.com\/embed\/[A-Za-z0-9]*/.test(v) || 'Not a valid YouTube link'
       ],
       image: '',
       imageRules: [
